@@ -2,6 +2,7 @@
 
 var person = {
     name: 'Ahmed sazzad',
+    age: 25,
     des: {
         qualification: 'Web Developer',
         language: 'JS and Python',
