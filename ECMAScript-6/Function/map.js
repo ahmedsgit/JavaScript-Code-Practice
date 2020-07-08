@@ -1,5 +1,5 @@
 /**
- * Map Function
+ * Map Function -it can store duplicate values
  */
 let country = new Map();
 
