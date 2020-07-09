@@ -1,5 +1,8 @@
-//Import from china.js
+/***
+ * Same name import export/named import export
+ */
 
+//Import from china.js
 import {
     china,
     duePayment

@@ -8,6 +8,7 @@ class china {
     }
 }
 let duePayment = 2000;
+//export class and variable
 export {
     china,
     duePayment
