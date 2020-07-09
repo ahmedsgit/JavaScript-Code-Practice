@@ -7,6 +7,8 @@ class china {
         return 100;
     }
 }
+let duePayment = 2000;
 export {
-    china
+    china,
+    duePayment
 };
