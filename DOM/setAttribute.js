@@ -1,6 +1,12 @@
 /***
  * Selector in Document Object Model
  */
+//add first this code in your html body
+/* <div class="container">
+        <form id="myForm">
+        </form>
+    </div> */
+
 //label dom
 let form = document.getElementById('myForm');
 let label = document.createElement('label');
