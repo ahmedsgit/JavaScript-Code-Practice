@@ -7,10 +7,6 @@ h1.setAttribute('id', 'title');
 h1.textContent = 'Data Set Property:'
 document.body.appendChild(h1);
 
-{
-    /* <div id="myDiv" data-name='Ahmed Sazzad' data-started-coding-at='19'>
-    </div> */
-}
 //dataset 
 
 let div = document.createElement('div');
