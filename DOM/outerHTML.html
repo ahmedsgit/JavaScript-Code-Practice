@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outer Html</title>
+    <link rel="stylesheet" href="HTMLandCSS/style.css">
+    <style>
+        div {
+            padding: 20px;
+            background-color: black;
+            color: #fff;
+            font-size: 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Hi Mother</h1>
+    <script>
+        let h1 = document.getElementById('title');
+        h1.outerHTML = '<div>Hi Father</div>'
+    </script>
+</body>
+
+</html>
