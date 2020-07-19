@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubbling Vs Capturing</title>
+    <link rel="stylesheet" href="HTMLandCSS/style.css">
+
+    <style>
+        .child {
+            margin: 50px 100px;
+        }
+
+        strong {
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="parent">
+        <p id="child"><strong>JavaScript</strong>, often abbreviated as JS, is a programming language that conforms
+            to the ECMAScript specification.<br><strong>JavaScript</strong> is high-level, often just-in-time compiled,
+            and
+            multi-paradigm.<br> It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and
+            first-class functions</p>
+    </div>
+    <script>
+        const parent = document.getElementById('parent');
+        const child = document.getElementById('child');
+        parent.addEventListener('click', (event) => console.log('parent node'),
+            true); //order will be reversed[default value is false]
+        child.addEventListener('click', (event) => console.log('child node'));
+    </script>
+</body>
+
+</html>
