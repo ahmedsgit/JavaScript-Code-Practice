@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Progress background</title>
+    <link rel="stylesheet" href="HTMLandCSS/style.css">
+    <style>
+        .pure-form {
+            margin-bottom: 10px;
+        }
+
+        .pure-form input {
+            padding: 5px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+        }
+
+        .pure-form input::placeholder {
+            text-align: center;
+        }
+
+        .pure-form button {
+            padding: 5px;
+            width: 70px;
+            background-color: #ef8e38;
+            border: 1px solid #bd600f;
+            border-radius: 3px;
+            color: #fff;
+            font-weight: bold;
+
+        }
+
+        .progress-bar {
+            height: 40px;
+            width: 300px;
+            border: 1px solid #fff;
+            display: inline-block;
+            position: relative;
+        }
+
+        .progress-bar-fill {
+            height: 100%;
+            background: #ef8e38;
+            transition: width 0.5s;
+        }
+
+        .progress-bar-value {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="title">Progress Bar</h1>
+    <form class="pure-form">
+        <input id="name" type="number" placeholder="Give a Value" />
+        <button type="submit">Get</button>
+    </form>
+    <div class="progress-bar">
+        <div class="progress-bar-value">
+            <p id="p">10%</p>
+        </div>
+        <div class="progress-bar-fill"></div>
+    </div>
+    <script>
+        class progressBar {
+            constructor(element, initialValue = 0) {
+                this.valueEle = document.querySelector('.progress-bar-value');
+                this.fillEle = document.querySelector('.progress-bar-fill');
+                this.setValue(initialValue);
+            }
+            setValue(newValue) {
+                if (newValue < 0) {
+                    newValue = 0;
+                } else if (newValue > 100) {
+                    newValue = 100;
+                } else {
+                    this.value = newValue;
+                    this.update();
+                }
+            }
+            update() {
+                const percentage = this.value + '%';
+                this.fillEle.style.width = percentage;
+                this.valueEle.textContent = percentage;
+            }
+        }
+        var myProgBar = new progressBar(document.querySelector('.progress-bar'), 0)
+
+        var nameInput = document.getElementById('name');
+
+        document.querySelector('form.pure-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+            myProgBar.setValue(nameInput.value);
+            const p = document.querySelector('.progress-bar-value');
+            p.style.color = 'white';
+
+        });
+    </script>
+</body>
+
+
+</html>
