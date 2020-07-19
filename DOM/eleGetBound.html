@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element.getBoundingClientRect</title>
+    <link rel="stylesheet" href="HTMLandCSS/style.css">
+    <style media="screen">
+        .box {
+            width: 100px;
+            height: 100px;
+            background: chocolate;
+            align-items: center;
+            display: inline-block;
+            border: 2px solid yellowgreen;
+            padding: 5px;
+        }
+
+        p {
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="title">Element.getBoundingClientRect</h2>
+    <div class="box"></div>
+
+
+    <div class="box"></div>
+    <script>
+        const box = document.querySelector('div.box');
+        const rect = box.getBoundingClientRect();
+        if (1) {
+            box.style.background = 'Red';
+        }
+    </script>
+</body>
+
+
+</html>
