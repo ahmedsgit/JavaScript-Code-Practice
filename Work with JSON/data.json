@@ -1,0 +1,11 @@
+{
+    "name": "Ahmed Sazzad",
+    "age": 25,
+    "married": false,
+    "babies": null,
+    "experience": ["oracle", "JS", "Python"],
+    "Address": {
+        "Country": "Bangladesh",
+        "City": "Narayongonj"
+    }
+}
