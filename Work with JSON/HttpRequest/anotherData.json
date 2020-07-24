@@ -1,0 +1,50 @@
+{
+    "Inspirational": [{
+            "title": "The Power of Positive Thinking",
+            "author": "Dr. Norman Vincent Peale",
+            "price": 9.03
+        },
+        {
+            "title": "How Successful People Think",
+            "author": "John C. Maxwell",
+            "price": 5.95
+        },
+        {
+            "title": "The 7 Habits of Highly Effective People",
+            "author": "Stephen R. Covey",
+            "price": 9.39
+        }
+    ],
+    "IT": [{
+            "title": "Python Programming",
+            "author": "John Zelle",
+            "price": 19.99
+        },
+        {
+            "title": "HTML and CSS: Design and Build Websites",
+            "author": "Jon Duckett",
+            "price": 17.19
+        },
+        {
+            "title": "Help Your Kids with Computer Coding",
+            "author": "DK Publishing",
+            "price": 16.83
+        },
+        {
+            "title": "JavaScript for Kids",
+            "author": " Nick Morgan",
+            "price": 25.54
+        }
+    ],
+    "Children's": [{
+            "title": "The Wonderful Wizard of Oz ",
+            "author": "L. Frank Baum",
+            "price": 3.42
+        },
+        {
+            "title": "Charlie and the Chocolate Factory",
+            "author": "Roald Dahl",
+            "price": 17.19
+        }
+    ]
+}
