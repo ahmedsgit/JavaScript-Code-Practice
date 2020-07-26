@@ -2,4 +2,4 @@
  * PadStart /PadEnd
  */
 
-console.log('Sazzad'.padStart(10, '.').padEnd(15, '.'));
+console.log('Sazzad'.padStart(10, '.').padEnd(14, '.'));
