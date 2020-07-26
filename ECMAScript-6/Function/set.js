@@ -28,3 +28,4 @@ if (country.has('Bangladesh')) {
 } else {
     console.log('Not found');
 }
+console.log(country);
