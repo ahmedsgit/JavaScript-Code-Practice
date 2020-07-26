@@ -11,5 +11,5 @@ async function getUser() {
 }
 
 getUser()
-    .then(data => console.log(`Id : ${data.id}`))
+    .then(data => console.log(`Id: ${data.id}`))
     .catch(err => console.log(err.message));
