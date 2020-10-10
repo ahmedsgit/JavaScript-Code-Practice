@@ -1,0 +1,19 @@
+{
+  "name": "node-js",
+  "version": "1.0.0",
+  "description": "Learn Node js",
+  "main": "createServer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node parsingRequest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ahmedsgit/JavaScript-Code-Practice/tree/master/Node%20Js"
+  },
+  "author": "Ahmed Sazzad",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
