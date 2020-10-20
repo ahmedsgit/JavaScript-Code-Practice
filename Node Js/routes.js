@@ -18,7 +18,7 @@ const requestaHandler = (req, res) => {
         });
         return req.on('end', () => {
             const parseBody = Buffer.concat(body).toString();
-            const message = parseBody.split('=')[1];
+            const message = newFunction(parseBody);
             fs.writeFile('message.txt', message, error => {
                 res.writeHead(302, {
                     'Location': '/'
@@ -38,3 +38,7 @@ const requestaHandler = (req, res) => {
 }
 
 module.exports = requestaHandler;
+
+function newFunction(parseBody) {
+    return parseBody.split('=')[1];
+}
