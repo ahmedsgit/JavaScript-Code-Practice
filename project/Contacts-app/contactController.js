@@ -11,7 +11,7 @@ exports.createContact = (req, res) => {
 };
 
 exports.getContactById = (req, res) => {
-  let { id } = re.params;
+  let { id } = res.params;
   id = parseInt(id);
   let contact = contacts.getContactsById(id);
 
@@ -19,7 +19,7 @@ exports.getContactById = (req, res) => {
 };
 
 exports.updateContact = (req, res) => {
-  let { id } = re.params;
+  let { id } = res.params;
   id = parseInt(id);
   let { name, phone, email } = req.body;
   let contact = contacts.updateContactById(id, {
@@ -31,7 +31,7 @@ exports.updateContact = (req, res) => {
 };
 
 exports.deleteContact = (req, res) => {
-  let { id } = re.params;
+  let { id } = res.params;
   id = parseInt(id);
   let contact = contacts.deleteContactById(id);
 
