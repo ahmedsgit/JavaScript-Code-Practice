@@ -1,0 +1,15 @@
+<%- include('../partials/header.ejs') %> <%- include('../partials/nav.ejs') %>
+<!-- Condition EJS -->
+<% if(post.status){ %>
+<h1><%= post.title %></h1>
+<% } else{ %>
+<h1>No Template Engine</h1>
+<% } %>
+<ul>
+  <% if(posts.length !==0){ %> <% for(let i of posts) {%>
+  <li><%= i.name %> is a <%= i.title %></li>
+  <% } %> <% } else {%>
+  <li>No Information</li>
+  <% } %>
+</ul>
+<%- include('../partials/footer.ejs') %>
